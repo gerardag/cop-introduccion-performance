@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Introduction practice to web performance.",
   "scripts": {
-    "web": "web-server -p 3000 -i index.html",
+    "dev": "web-server -p 3000 -i index.html",
     "br": "brotli-cli js/script.js js/script.min.js css/styles.css css/styles.min.css",
     "minify-html": "htmlmin index.html -o index.min.html",
     "minify-css": "cleancss -o css/styles.min.css css/styles.css",
