@@ -1,0 +1,20 @@
+{
+  "name": "cop-performance-i",
+  "version": "1.0.0",
+  "description": "Introduction practice to web performance.",
+  "scripts": {
+    "web": "web-server -p 3000 -i index.html",
+    "br": "brotli-cli js/script.js js/script.min.js css/styles.css css/styles.min.css",
+    "minify-html": "htmlmin index.html -o index.min.html",
+    "minify-css": "cleancss -o css/styles.min.css css/styles.css",
+    "uglify-js": "uglifyjs js/script.js -o js/script.min.js"
+  },
+  "dependencies": {
+    "brotli-cli": "0.0.1",
+    "clean-css-cli": "^4.3.0",
+    "html-minifier-cli": "^0.1.0",
+    "lighthouse": "^5.6.0",
+    "uglify-js": "^3.6.9",
+    "web-server-cli": "^2.0.2"
+  }
+}

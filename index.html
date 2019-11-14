@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Performance I</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/script.js"></script>
+  </head>
+  <body>
+    <h1>Performance I.</h1>
+    <p>¿Cómo mejoramos la performance?</p>
+    <ol>
+      <li>
+        Vamos a hacer una primera auditoría para ver como estamos. Usaremos la opción de <strong>Simulated Slow 4G, 4x de CPU slowddown</strong>.
+        <img src="//hkgr.netlify.com/wpo/velocidad.jpg" alt="Velocidad test" >
+      </li>
+      <li>
+        Usaremos una fuente de reemplazo, asi tenemos siempre el contenido visible hasta que la fuente se ha descargador.
+        <br />
+        Usaremos la propiedad <code>font-display: swap</code> para tener una fuente de sustitución.
+        <br />Ahora hemos solucionado un problema bastante común (https://css-tricks.com/fout-foit-foft/).
+      </li>
+      <li>
+        Si volvemos a pasar un test, vemos como aún podemos mejorar ya que Lighthouse nos avisa que tenemos ficheros sin minificar.
+        <br />
+        Para solucionarlo, dentro del html tendríamos que cambiar <code>script.js</code> por <code>script.min.js</code>, y hacemos lo mismo con los css y pasamos de nuevo el audit.
+      </li>
+      <li>
+        Aun con una página tan senzilla podemos optimizar incluso la imágen, usando el formato correcto para cada navegador.
+        <br />
+        Si usamos Chrome, la mejor opción és <strong>webp</strong>, por lo que cambiamos la extensión de la imágen que cargamos y vemos como la imágen pesará menos pero no perdemos calidad.
+      </li>
+    </ol>
+  </body>
+</html>
